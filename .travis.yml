@@ -6,7 +6,7 @@ node_js:
 
 branches:
   only:
-  - local
+  - master
 
 install:
 - npm install
