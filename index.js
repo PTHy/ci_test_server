@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
 	res.json({message: `Hello ${name}`});
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
 	console.log(`Server is listening on ${port}`);
-});
+      });
+
+module.exports = server;
