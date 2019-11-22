@@ -17,4 +17,4 @@ before_script:
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
 script:
-- node index.js
+- npm run test
