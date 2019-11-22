@@ -1,0 +1,20 @@
+# .travis.yml  
+language: node_js
+
+node_js:
+  - "lts/*"  
+
+branches:
+  only:
+  - local
+
+install:
+- npm install
+
+before_script:
+- git config --global user.name PTHy
+- git config --global user.email tae020117@gmail.com
+- sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
+
+script:
+- node index.js
